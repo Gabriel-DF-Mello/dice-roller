@@ -44,15 +44,27 @@ def roll_dice(diceStr):
 
     return rolls, mod
 
+def save_roll(name, diceStr):
+    return
+
+def roll_saved(name):
+    return
+
+def save_file(dic, path):
+    return
+
+def load_file(path):
+    return
+
 def __main__():
     while True:
         try:
-            diceStr = input('> ')  # The prompt to enter the dice string.
-            if (diceStr.upper() == 'QUIT')or(diceStr.upper() == 'EXIT'):
+            input = input('> ')  # The prompt to enter the dice string.
+            if (input.upper() == 'QUIT')or(input.upper() == 'EXIT')or(input.upper() == 'Q'):
                 print('Thanks for playing!')
                 sys.exit()
 
-            rolls, mod = roll_dice(diceStr)
+            rolls, mod = roll_dice(input)
 
             # Total
             print('Total:', sum(rolls) + mod, '( ', end='')
