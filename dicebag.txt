@@ -1,0 +1,3 @@
+fireball:8d6
+sword:1d6
+staff:1d6+2
